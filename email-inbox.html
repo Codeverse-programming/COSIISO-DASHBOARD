@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header" style="background-color: white;">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="./images/cosilogo.png" alt=""> </b>
+                    <span class="logo-compact"><img src="./images/cosi-logo.png" alt=""></span>
+                    <span class="brand-title">
+                        <img src="./images/cosi-logo.png" alt="" width="87" height="50">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-0 pr-2 pr-sm-3" id="basic-addon1"><i
+                                    class="mdi mdi-magnify"></i></span>
+                        </div>
+                        <input type="search" class="form-control" placeholder="Search Dashboard"
+                            aria-label="Search Dashboard">
+                        <div class="drop-down   d-md-none">
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile   dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="app-profile.html"><i class="icon-user"></i>
+                                                <span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="email-inbox.html"><i class="icon-envelope-open"></i>
+                                                <span>Inbox</span>
+                                                <div class="badge gradient-3 badge-pill badge-primary">3</div>
+                                            </a>
+                                        </li>
+
+                                        <hr class="my-2">
+                                        <li>
+                                            <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock
+                                                    Screen</span></a>
+                                        </li>
+                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="ion-bag menu-icon"></i><span class="nav-text">Orders</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./order.html">Orders</a></li>
+                            <li><a href="./order-details.html">Orders Details</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="ion-person menu-icon"></i><span class="nav-text">Customers</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./customers.html">Customers</a></li>
+                            <li><a href="./customers-details.html">Customers Details</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="ion-cube menu-icon"></i><span class="nav-text">Products</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./product.html">Products</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <img class="menu-icon" height="20"
+                                src="data:image/png;base64,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">
+                            <span class="nav-text">Refunds</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./refunds.html">Refunds</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-envelope menu-icon"></i> <span class="nav-text">Messages</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./email-inbox.html">Inbox</a></li>
+                            <li><a href="./email-read.html">Read</a></li>
+                            <li><a href="./email-compose.html">Compose</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-notebook menu-icon"></i><span class="nav-text">Pages</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./page-login.html">Login</a></li>
+                            <li><a href="./page-register.html">Register</a></li>
+                            <li><a href="./page-lock.html">Lock Screen</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="./page-error-404.html">Error 404</a></li>
+                                    <li><a href="./page-error-403.html">Error 403</a></li>
+                                    <li><a href="./page-error-400.html">Error 400</a></li>
+                                    <li><a href="./page-error-500.html">Error 500</a></li>
+                                    <li><a href="./page-error-503.html">Error 503</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="email-left-box"><a href="email-compose.html"
+                                        class="btn btn-primary btn-block">Compose</a>
+                                    <div class="mail-list mt-4"><a href="email-inbox.html"
+                                            class="list-group-item border-0 text-primary p-r-0"><i
+                                                class="fa fa-inbox font-18 align-middle mr-2"></i> <b>Inbox</b> <span
+                                                class="badge badge-primary badge-sm float-right m-t-5">198</span> </a>
+                                        <a href="#" class="list-group-item border-0 p-r-0"><i
+                                                class="fa fa-paper-plane font-18 align-middle mr-2"></i>Sent</a> <a
+                                            href="#" class="list-group-item border-0 p-r-0"><i
+                                                class="fa fa-star-o font-18 align-middle mr-2"></i>Important <span
+                                                class="badge badge-danger badge-sm float-right m-t-5">47</span> </a>
+                                        <a href="#" class="list-group-item border-0 p-r-0"><i
+                                                class="mdi mdi-file-document-box font-18 align-middle mr-2"></i>Draft</a><a
+                                            href="#" class="list-group-item border-0 p-r-0"><i
+                                                class="fa fa-trash font-18 align-middle mr-2"></i>Trash</a>
+                                    </div>
+                                    <h5 class="mt-5 m-b-10">Categories</h5>
+                                    <div class="list-group mail-list"><a href="#" class="list-group-item border-0"><span
+                                                class="fa fa-briefcase f-s-14 mr-2"></span>Work</a> <a href="#"
+                                            class="list-group-item border-0"><span
+                                                class="fa fa-sellsy f-s-14 mr-2"></span>Private</a> <a href="#"
+                                            class="list-group-item border-0"><span
+                                                class="fa fa-ticket f-s-14 mr-2"></span>Support</a> <a href="#"
+                                            class="list-group-item border-0"><span
+                                                class="fa fa-tags f-s-14 mr-2"></span>Social</a>
+                                    </div>
+                                </div>
+                                <div class="email-right-box">
+                                    <div role="toolbar" class="toolbar">
+                                        <div class="btn-group">
+                                            <button aria-expanded="false" data-toggle="dropdown"
+                                                class="btn btn-dark dropdown-toggle" type="button">More <span
+                                                    class="caret m-l-5"></span>
+                                            </button>
+                                            <div class="dropdown-menu"><span class="dropdown-header">More Option
+                                                    :</span> <a href="javascript: void(0);" class="dropdown-item">Mark
+                                                    as Unread</a> <a href="javascript: void(0);"
+                                                    class="dropdown-item">Add to Tasks</a> <a
+                                                    href="javascript: void(0);" class="dropdown-item">Add Star</a> <a
+                                                    href="javascript: void(0);" class="dropdown-item">Mute</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="email-list m-t-15">
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk2">
+                                                        <label class="toggle" for="chk2"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Ingredia Nutrisha, A collection of textile
+                                                        samples lay spread out on the table - Samsa was a travelling
+                                                        salesman - and above it there hung a picture</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk3">
+                                                        <label class="toggle" for="chk3"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Almost unorthographic life One day however a
+                                                        small line of blind text by the name of Lorem Ipsum decided to
+                                                        leave for the far World of Grammar.</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk4">
+                                                        <label class="toggle" for="chk4"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Pointing has no control about the blind texts
+                                                        it is an almost unorthographic life One day however a small line
+                                                        of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk5">
+                                                        <label class="toggle" for="chk5"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Even the all-powerful Pointing has no control
+                                                        about the blind texts it is an almost unorthographic life One
+                                                        day however a small line of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk6">
+                                                        <label class="toggle" for="chk6"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Ingredia Nutrisha, A collection of textile
+                                                        samples lay spread out on the table - Samsa was a travelling
+                                                        salesman - and above it there hung a picture</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk7">
+                                                        <label class="toggle" for="chk7"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Almost unorthographic life One day however a
+                                                        small line of blind text by the name of Lorem Ipsum decided to
+                                                        leave for the far World of Grammar.</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk8">
+                                                        <label class="toggle" for="chk8"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Pointing has no control about the blind texts
+                                                        it is an almost unorthographic life One day however a small line
+                                                        of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message unread">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk9">
+                                                        <label class="toggle" for="chk9"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Even the all-powerful Pointing has no control
+                                                        about the blind texts it is an almost unorthographic life One
+                                                        day however a small line of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message unread">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk10">
+                                                        <label class="toggle" for="chk10"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Ingredia Nutrisha, A collection of textile
+                                                        samples lay spread out on the table - Samsa was a travelling
+                                                        salesman - and above it there hung a picture</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk11">
+                                                        <label class="toggle" for="chk11"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Almost unorthographic life One day however a
+                                                        small line of blind text by the name of Lorem Ipsum decided to
+                                                        leave for the far World of Grammar.</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk12">
+                                                        <label class="toggle" for="chk12"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Pointing has no control about the blind texts
+                                                        it is an almost unorthographic life One day however a small line
+                                                        of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk13">
+                                                        <label class="toggle" for="chk13"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Even the all-powerful Pointing has no control
+                                                        about the blind texts it is an almost unorthographic life One
+                                                        day however a small line of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk14">
+                                                        <label class="toggle" for="chk14"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Ingredia Nutrisha, A collection of textile
+                                                        samples lay spread out on the table - Samsa was a travelling
+                                                        salesman - and above it there hung a picture</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message unread">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk15">
+                                                        <label class="toggle" for="chk15"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Almost unorthographic life One day however a
+                                                        small line of blind text by the name of Lorem Ipsum decided to
+                                                        leave for the far World of Grammar.</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk16">
+                                                        <label class="toggle" for="chk16"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Pointing has no control about the blind texts
+                                                        it is an almost unorthographic life One day however a small line
+                                                        of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk17">
+                                                        <label class="toggle" for="chk17"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Even the all-powerful Pointing has no control
+                                                        about the blind texts it is an almost unorthographic life One
+                                                        day however a small line of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk18">
+                                                        <label class="toggle" for="chk18"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Ingredia Nutrisha, A collection of textile
+                                                        samples lay spread out on the table - Samsa was a travelling
+                                                        salesman - and above it there hung a picture</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk19">
+                                                        <label class="toggle" for="chk19"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Almost unorthographic life One day however a
+                                                        small line of blind text by the name of Lorem Ipsum decided to
+                                                        leave for the far World of Grammar.</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message unread">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk20">
+                                                        <label class="toggle" for="chk20"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Pointing has no control about the blind texts
+                                                        it is an almost unorthographic life One day however a small line
+                                                        of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="message">
+                                            <a href="email-read.html">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="email-checkbox">
+                                                        <input type="checkbox" id="chk21">
+                                                        <label class="toggle" for="chk21"></label>
+                                                    </div><span class="star-toggle ti-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <div class="subject">Even the all-powerful Pointing has no control
+                                                        about the blind texts it is an almost unorthographic life One
+                                                        day however a small line of blind text by the name of</div>
+                                                    <div class="date">11:49 am</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- panel -->
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-left">1 - 20 of 568</div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="btn-group float-right">
+                                                <button class="btn btn-gradient" type="button"><i
+                                                        class="fa fa-angle-left"></i>
+                                                </button>
+                                                <button class="btn btn-dark" type="button"><i
+                                                        class="fa fa-angle-right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>&copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                    <a href="https://themeforest.net/user/quixlab"><img src="./images/cosi-logo.png" alt="" height="40">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+</body>
+
+</html>
