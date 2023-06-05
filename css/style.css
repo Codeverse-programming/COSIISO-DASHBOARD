@@ -7637,7 +7637,7 @@ sub {
   .hamburger .toggle-icon {
     font-size: 1.4rem;
     line-height: 2rem;
-    color: #494949; }
+    color: white; }
 
 .hamburger:hover {
   cursor: pointer; }
@@ -14480,13 +14480,17 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 [data-theme-version="dark"] .header-right .dropdown-content-body ul > li {
   background-color: #1b2b42; }
   [data-theme-version="dark"] .header-right .dropdown-content-body ul > li a {
-    color: #abafb3; }
+    color: white; }
+  [data-theme-version="dark"] .header-right .dropdown-content-body ul > li a i{
+    color: white; }
 
 [data-theme-version="dark"] .header-right .notification-heading {
   color: #fff; }
 
 [data-theme-version="dark"] .header-left .header-search .input-group .input-group-text {
   background-color: #162336; }
+[data-theme-version="dark"] .header-left .header-search .input-group .input-group-text i {
+  color: white; }
 
 [data-theme-version="dark"] .nk-sidebar {
   box-shadow: none;
